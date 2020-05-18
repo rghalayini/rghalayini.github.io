@@ -1,13 +1,14 @@
 
 
+
 body {
-    background-image: url("background.jpg");
+    background-image: url("d.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: aqua;
     font-family: Arial, Helvetica, sans-serif;
-    
+    opacity: 0.7;
 }
 header {
     color: aliceblue;
