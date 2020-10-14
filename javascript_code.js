@@ -44,7 +44,7 @@
 		time: 2000
 	});
 
-	/*--/ Star Scrolling nav /--*/
+	/*--/ Start Scrolling nav /--*/
 	$('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
 		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 			var target = $(this.hash);
