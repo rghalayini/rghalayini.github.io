@@ -76,8 +76,9 @@ a:hover {
 .bg-image {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: contain;   /*--/ Instead of cover to resize the image on a smaller browser /--*/
   background-position: center center;
+  background-color: black;
 }
 
 .overlay-mf {
@@ -1529,3 +1530,8 @@ img {
   0% {opacity:0;}
   100% {opacity:1;}
   }
+
+  .skill-mf {
+    padding: 40px 0;
+    text-align: center;
+    }
