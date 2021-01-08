@@ -727,15 +727,32 @@ a:hover {
   } */
   
   /* Darker download background on mouse-over */
-  .download_btn:hover {
+  /* .download_btn:hover {
     background-color: RoyalBlue;
-  }
+  } */
 
+
+ #CV_btn:hover{
+    background-color:#0078ff;
+    color:white;
+ } 
+ #CV_btn:hover .fa-download{
+    color:white
+ } 
 .download_btn {
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;   
     /* width:100%;  */
 }
+.fa-download {
+    color:#0078ff;
+}
+
+
+
+
+
 
 /*======================================
 //--//-->   SERVICES
