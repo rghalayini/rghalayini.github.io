@@ -715,23 +715,6 @@ a:hover {
     transition: all 0.15s;
 }
 
-
-/* Style download buttons */
-/* .download_btn {
-    background-color: DodgerBlue;
-    border: none;
-    color: white;
-    padding: 12px 30px;
-    cursor: pointer;
-    font-size: 20px;
-  } */
-  
-  /* Darker download background on mouse-over */
-  /* .download_btn:hover {
-    background-color: RoyalBlue;
-  } */
-
-
  #CV_btn:hover{
     background-color:#0078ff;
     color:white;
@@ -743,16 +726,10 @@ a:hover {
     padding-top: 20px;
     margin-left: auto;
     margin-right: auto;   
-    /* width:100%;  */
 }
 .fa-download {
     color:#0078ff;
 }
-
-
-
-
-
 
 /*======================================
 //--//-->   SERVICES
