@@ -5,4 +5,4 @@ work experience and education, click on **'download my cv'** under the About Me 
 
 _This Website is regularly updated to showcase the latest projects i did_
 
-[Check it here](https://rghalayini.github.io) or visit go to rghalayini.github.io/
+[Check it here](https://rghalayini.github.io) or go to rghalayini.github.io/
