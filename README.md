@@ -7,4 +7,4 @@ _This Website is regularly updated to showcase the latest projects i did_
 
 [Check it here](https://rghalayini.github.io) or go to rghalayini.github.io/
 
-Latest update> 26-05-2021
+Latest update> 28-05-2021
