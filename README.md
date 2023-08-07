@@ -7,6 +7,6 @@ _This Website is regularly updated to showcase the latest projects i did_
 
 [Check it here](https://rghalayini.github.io) or go to rghalayini.github.io/
 
-The plan is to update the website with more functionalities.
+The plan is to update the website with better functionalities.
 
 Latest update>7-08-2023
