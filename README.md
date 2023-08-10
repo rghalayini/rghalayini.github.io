@@ -9,4 +9,4 @@ _This Website is regularly updated to showcase the latest projects i did_
 
 The plan is to update the website with better functionalities.
 
-Latest update>9-08-2023
+Latest update>10-08-2023
