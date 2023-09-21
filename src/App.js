@@ -1,8 +1,12 @@
 import "./App.css";
 import React from "react";
+import LandingPage from "./pages/LandingPage";
 
 const App = () => {
-  return <div>hello world</div>;
+  return (
+    <div>
+      <LandingPage />{" "}
+    </div>
+  );
 };
-
 export default App;
