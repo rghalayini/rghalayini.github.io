@@ -20,8 +20,27 @@ const styles = {
   },
 };
 
-const pages = ["Contact", "Projects", "About me", "Resume"];
-
+const pages = [
+  {
+    pageName: "Contact",
+    url: "/contact",
+  },
+  {
+    pageName: "Projects",
+    url: "",
+  },
+  {
+    pageName: "About me",
+    url: "",
+  },
+  {
+    pageName: "Resume",
+    url: "",
+  },
+];
+const handleClick = (url) => {
+  window.location.href = url;
+};
 const ResponsiveAppBar = () => {
   return (
     <AppBar position="static" color="transparent">
@@ -42,10 +61,10 @@ const ResponsiveAppBar = () => {
             {pages.map((page) => (
               <Button
                 key={page}
-                //onClick={handleCloseNavMenu}
+                onClick={() => handleClick(page.url)}
                 sx={{ my: 2, color: "black", display: "block" }}
               >
-                {page}
+                {page.pageName}
               </Button>
             ))}
           </Box>
