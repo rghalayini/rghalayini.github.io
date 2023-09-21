@@ -22,17 +22,7 @@ const styles = {
 
 const pages = ["Contact", "Projects", "About me", "Resume"];
 
-function ResponsiveAppBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
+const ResponsiveAppBar = () => {
   return (
     <AppBar position="static" color="transparent">
       <Container maxWidth="xl">
@@ -52,7 +42,7 @@ function ResponsiveAppBar() {
             {pages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                //onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "black", display: "block" }}
               >
                 {page}
@@ -63,5 +53,5 @@ function ResponsiveAppBar() {
       </Container>
     </AppBar>
   );
-}
+};
 export default ResponsiveAppBar;
