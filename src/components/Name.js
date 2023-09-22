@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Grid, Avatar, Container } from "@mui/material";
+import { Typography, Grid, Avatar, Container } from "@mui/material";
 import profile from "../images/RG_profile.png";
 
 const styles = {
