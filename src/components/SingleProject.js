@@ -5,11 +5,21 @@ import { Link } from "react-router-dom";
 import Proptypes from "prop-types";
 
 const styles = {
-  svg: {
+  svgBox: {
     backgroundColor: "black",
-    width: 100,
-    height: 100,
-    padding: "10px",
+    width: "100%",
+    height: "100%",
+    // padding: "10px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  svg: {
+    width: "80%",
+  },
+  image: {
+    display: "flex",
+    alignItems: "center",
   },
 };
 
@@ -18,8 +28,15 @@ const SingleProject = ({ url }) => {
 
   return (
     <Link to={url}>
-      <Box component="svg" viewBox="0 0 100 100" sx={styles.svg}>
-        <image href={Globhe} width="100%" height="100%" />
+      <Box sx={styles.svgBox}>
+        <Box component="svg" viewBox="0 0 100 100" sx={styles.svg}>
+          <image
+            href={Globhe}
+            width="100%"
+            height="100%"
+            style={styles.image}
+          />
+        </Box>
       </Box>
     </Link>
   );

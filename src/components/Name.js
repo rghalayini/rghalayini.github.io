@@ -1,11 +1,10 @@
 import React from "react";
-import { Typography, Grid, Avatar, Container } from "@mui/material";
+import { Typography, Grid, Avatar, Box } from "@mui/material";
 import profile from "../images/RG_profile.png";
 
 const styles = {
   container: {
     display: "flex",
-    marginTop: "60px",
   },
   gridContainer: {
     display: "flex",
@@ -18,7 +17,7 @@ const styles = {
 };
 const Name = () => {
   return (
-    <Container sx={styles.container} maxWidth="lg">
+    <Box sx={styles.container}>
       <Grid container sx={styles.gridContainer} spacing={4}>
         <Grid item xs={8}>
           <Typography variant="h6">
@@ -35,7 +34,7 @@ const Name = () => {
           <Avatar alt="Remy Sharp" src={profile} sx={styles.avatar} />
         </Grid>
       </Grid>
-    </Container>
+    </Box>
   );
 };
 

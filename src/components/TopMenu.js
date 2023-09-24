@@ -22,16 +22,16 @@ const styles = {
 
 const pages = [
   {
-    pageName: "Contact",
-    url: "/contact",
-  },
-  {
     pageName: "Projects",
     url: "",
   },
   {
     pageName: "About me",
     url: "",
+  },
+  {
+    pageName: "Contact",
+    url: "/contact",
   },
   {
     pageName: "Resume",
