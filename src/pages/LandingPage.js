@@ -4,6 +4,7 @@ import Name from "../components/Name";
 import MyProjects from "../components/MyProjects";
 import { Container, Box } from "@mui/material";
 import LetsConnect from "../components/LetsConnect";
+import AboutMe from "../components/AboutMe";
 
 const styles = {
   box: {
@@ -20,6 +21,10 @@ const LandingPage = () => {
         </Box>
         <Box sx={styles.box}>
           <MyProjects />
+        </Box>
+
+        <Box sx={styles.box}>
+          <AboutMe />
         </Box>
         <Box sx={styles.box}>
           <LetsConnect />

@@ -1,11 +1,12 @@
 import React from "react";
 import { Typography, Grid } from "@mui/material";
 import SingleProject from "./SingleProject";
+import { TextMargin } from "../library/Constants";
 
 const MyProjects = () => {
   return (
     <>
-      <Typography variant="h3" sx={{ marginBottom: "20px" }}>
+      <Typography variant="h3" sx={TextMargin}>
         Check out my projects
       </Typography>
       <Grid container>
