@@ -1,6 +1,6 @@
 import React from "react";
-import LetsConnect from "../components/LetsConnect";
-import TopMenu from "../components/TopMenu";
+import LetsConnect from "../pageComponents/LetsConnect";
+import TopMenu from "../pageComponents/TopMenu";
 
 const Contact = () => {
   return (
