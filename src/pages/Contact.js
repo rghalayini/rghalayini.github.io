@@ -1,13 +1,12 @@
 import React from "react";
 import LetsConnect from "../pageComponents/LetsConnect";
-import TopMenu from "../pageComponents/TopMenu";
+import Layout from "../pageComponents/Layout";
 
 const Contact = () => {
   return (
-    <>
-      <TopMenu />
+    <Layout>
       <LetsConnect />
-    </>
+    </Layout>
   );
 };
 
