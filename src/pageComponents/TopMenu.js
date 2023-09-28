@@ -27,7 +27,7 @@ const pages = [
   },
   {
     pageName: "About me",
-    url: "",
+    url: "/about",
   },
   {
     pageName: "Contact",
