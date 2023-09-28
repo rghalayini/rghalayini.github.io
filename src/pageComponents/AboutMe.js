@@ -3,12 +3,12 @@ import { Typography, Box } from "@mui/material";
 import { TextMargin } from "../library/Constants";
 import TextBlock from "../components/TextBlock";
 import arctic15 from "../images/arctic15.png";
+import BlockHeader from "../components/BlockHeader";
+
 const AboutMe = () => {
   return (
     <Box>
-      <Typography variant="h3" sx={TextMargin}>
-        About me
-      </Typography>
+      <BlockHeader text="About me" />
       <TextBlock
         text="As a seasoned product leader, I have a unique perspective on building
         products that are both technically sound and user-friendly. I am
@@ -25,7 +25,6 @@ const AboutMe = () => {
         focus on detailed and comprehensive documentation."
         image={arctic15}
       />
-
       <Typography variant="h6" sx={TextMargin}>
         Background
       </Typography>
