@@ -1,12 +1,12 @@
 import React from "react";
-import TopMenu from "../pageComponents/TopMenu";
 import Name from "../pageComponents/Name";
 import MyProjects from "../pageComponents/MyProjects";
-import { Container, Box } from "@mui/material";
-import LetsConnect from "../pageComponents/LetsConnect";
-import AboutMe from "../pageComponents/AboutMe";
+import { Box } from "@mui/material";
+// import LetsConnect from "../pageComponents/LetsConnect";
+// import AboutMe from "../pageComponents/AboutMe";
 import HowIWork from "../pageComponents/HowIWork";
 import GeneralButton from "../components/GeneralButton";
+import Layout from "../pageComponents/Layout";
 
 const styles = {
   box: {
@@ -21,8 +21,7 @@ const styles = {
 const LandingPage = () => {
   return (
     <>
-      <TopMenu />
-      <Container maxWidth="lg">
+      <Layout>
         <Box sx={styles.box}>
           <Name />
         </Box>
@@ -41,7 +40,7 @@ const LandingPage = () => {
         <Box sx={styles.box}>
           <LetsConnect />
         </Box> */}
-      </Container>
+      </Layout>
     </>
   );
 };

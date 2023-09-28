@@ -1,13 +1,12 @@
 import React from "react";
 import AboutMe from "../pageComponents/AboutMe";
-import TopMenu from "../pageComponents/TopMenu";
+import Layout from "../pageComponents/Layout";
 
 const Contact = () => {
   return (
-    <>
-      <TopMenu />
+    <Layout>
       <AboutMe />
-    </>
+    </Layout>
   );
 };
 
