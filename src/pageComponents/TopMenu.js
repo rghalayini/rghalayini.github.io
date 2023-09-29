@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import AdbIcon from "@mui/icons-material/Adb";
+import theme from "../theme";
 
 const styles = {
   title: {
@@ -14,9 +15,14 @@ const styles = {
     fontFamily: "monospace",
     fontWeight: 700,
     //letterSpacing: ".3rem",
-    color: "black",
+    color: theme.palette.black.deepSpaceBlack,
     textDecoration: "none",
     marginRight: "60px",
+  },
+  menuItem: {
+    my: 2,
+    color: theme.palette.black.deepSpaceBlack,
+    display: "block",
   },
 };
 
@@ -43,7 +49,7 @@ const handleClick = (url) => {
 };
 const ResponsiveAppBar = () => {
   return (
-    <AppBar position="fixed" color="primary">
+    <AppBar position="fixed" color="grey">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -62,7 +68,7 @@ const ResponsiveAppBar = () => {
               <Button
                 key={page}
                 onClick={() => handleClick(page.url)}
-                sx={{ my: 2, color: "black", display: "block" }}
+                sx={styles.menuItem}
               >
                 {page.pageName}
               </Button>

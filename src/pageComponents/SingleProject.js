@@ -3,10 +3,10 @@ import { Box } from "@mui/system";
 import Globhe from "../images/63a4404bcc9a62ad79fc3751_Globhe_logotype_2022_white.svg";
 import { Link } from "react-router-dom";
 import Proptypes from "prop-types";
-
+import theme from "../theme";
 const styles = {
   svgBox: {
-    backgroundColor: "black",
+    backgroundColor: theme.palette.black.deepSpaceBlack,
     width: "100%",
     height: "100%",
     // padding: "10px",
