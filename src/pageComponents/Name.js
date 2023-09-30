@@ -1,14 +1,17 @@
 import React from "react";
 import { Typography, Grid, Avatar, Box } from "@mui/material";
 import profile from "../images/RG_profile.png";
+import theme from "../theme";
 
 const styles = {
   container: {
-    display: "flex",
+    //display: "flex",
+    backgroundColor: theme.palette.grey.medium,
   },
   gridContainer: {
     display: "flex",
     alignItems: "center",
+    padding: "30px",
   },
   avatar: {
     width: 200,
