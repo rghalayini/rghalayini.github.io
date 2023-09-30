@@ -18,7 +18,7 @@ const ListComponent = ({ item, withIcons, secondaryItem }) => {
             secondary={secondaryItem && item.secondary}
             primaryTypographyProps={{
               variant: "h6",
-              color: theme.palette.primary.medium,
+              color: theme.palette.grey.dark,
             }}
           />
         </ListItem>

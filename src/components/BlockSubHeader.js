@@ -6,7 +6,7 @@ import theme from "../theme";
 const styles = {
   textHeader: {
     marginBottom: "20px",
-    color: theme.palette.primary.medium,
+    color: theme.palette.primary.main,
   },
   margin: {
     marginTop: "40px",

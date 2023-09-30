@@ -30,21 +30,14 @@ const theme = createTheme({
   palette: {
     // blue
     primary: {
-      main: "#164df2",
-      medium: "#486cd9",
-      purple: " #5a73bf",
-    },
-    // green
-    secondary: {
-      main: "#3df2e0",
+      main: "#A8C893",
     },
     black: {
       deepSpaceBlack: "#000000",
     },
     grey: {
-      dark: "#84888c",
-      medium: "#babcbf",
-      light: "#f2f2f2",
+      dark: "#484649",
+      medium: "#DCDCDF",
       white: "#f8fcff",
     },
   },
