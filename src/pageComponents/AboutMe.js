@@ -1,9 +1,10 @@
 import React from "react";
-import { Typography, Box } from "@mui/material";
-import { TextMargin } from "../library/Constants";
+import { Box } from "@mui/material";
 import TextBlock from "../components/TextBlock";
 import arctic15 from "../images/arctic15.png";
 import BlockHeader from "../components/BlockHeader";
+import BlockSubHeader from "../components/BlockSubHeader";
+import CallForAction from "../components/CallForAction";
 
 const AboutMe = () => {
   return (
@@ -16,18 +17,15 @@ const AboutMe = () => {
         experience that eases pain points and brings joy. At the same time, I
         bring a data-driven approach to building products, using data and
         analytics to gain insights into user behavior and make informed
-        decisions that drive growth. I currently live in Gothenburg Sweden, and
-        in my ideal role I would work fully remote"
+        decisions that drive growth."
         text2="I currently live in Gothenburg Sweden, and in my ideal role I would work
         fully remote. I am well used to work remotely with colleagues in
         different time zones. I work mostly asynchronous in order to account for
         time differences and use multiple tools to empower my team members. I
-        focus on detailed and comprehensive documentation."
+        focus on detailed and comprehensive documentation to make processes faster and allow the team to be independent."
         image={arctic15}
       />
-      <Typography variant="h6" sx={TextMargin}>
-        Background
-      </Typography>
+      <BlockSubHeader text="Background" />
       <TextBlock
         text="I have a PhD in geophysics from the Sorbonnes University in Paris.
         During and after my studies, I have worked tremendously with geospatial
@@ -37,9 +35,7 @@ const AboutMe = () => {
         international corporations and worked in multiple countries with
         colleagues from all around the globe."
       />
-      <Typography variant="h6" sx={TextMargin}>
-        Programming skills
-      </Typography>
+      <BlockSubHeader text="Programming skills" />
       <TextBlock
         text="I turned into full stack development because I love to build things. I
         have worked on projects in node.js, javascript, C#, .net, and react. I
@@ -51,9 +47,7 @@ const AboutMe = () => {
         I truly believe that a technical background for a PM is essential in my
         opinion."
       />
-      <Typography variant="h6" sx={TextMargin}>
-        Product management
-      </Typography>
+      <BlockSubHeader text="Product management" />
       <TextBlock
         text="As a seasoned product leader, I have a unique perspective on building
         products that are both technically sound and user-friendly. I am
@@ -70,6 +64,7 @@ const AboutMe = () => {
         analytics to drive innovation and deliver products that exceed our
         customers' expectations."
       />
+      <CallForAction label="Contact me" url="/contact" />
     </Box>
   );
 };

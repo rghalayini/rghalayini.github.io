@@ -5,7 +5,8 @@ import TopMenu from "./TopMenu";
 
 const styles = {
   container: {
-    marginTop: "60px",
+    marginTop: "20vh",
+    marginBottom: "15vh",
   },
 };
 
