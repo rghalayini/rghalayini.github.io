@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Box, Typography } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
-
+import theme from "../theme";
 const styles = {
   container: {
     display: "flex",
@@ -17,7 +17,7 @@ const styles = {
   },
   icon: {
     fontSize: "50px",
-    color: "black",
+    color: theme.palette.black.deepSpaceBlack,
   },
   aTag: {
     textDecoration: "none",

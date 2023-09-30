@@ -2,12 +2,17 @@ import React from "react";
 import TextBlock from "../components/TextBlock";
 import BlockHeader from "../components/BlockHeader";
 import { List, ListItem, ListItemText } from "@mui/material";
-
+import theme from "../theme";
 const HowIWorkList = [
   {
     primary: "Set up a product team",
     secondary:
       "If you are a new startup and you need help setting up a team, I can create recruitment processes, interview candidates, and create a product team of both UX-UI designers and developers",
+  },
+  {
+    primary: "On hands product building",
+    secondary:
+      "If you are a small company willing to launch an MVP, I can be a hands-on manager coding simultaneously while building the team and processes. My knowledge of both programming and UX-UI design will get you through the MVP and the initial scale-up without needing a large and expensive development team.",
   },
   {
     primary: "Create processes and documentations",
@@ -45,14 +50,17 @@ const HowIWork = () => {
   return (
     <>
       <BlockHeader text="How I work" />
-      <TextBlock text="Below is a brief overview of my career. My goal is to showcase some of the various leadership and product management techniques and methodologies my teams and I have used to drive customer and business growth depending on the specific needs of a product and team. This includes the following areas I specialize in:" />
+      <TextBlock text="Below is a brief overview of my work strategy and how I work. My goal is to showcase some of the various leadership and product management techniques and methodologies my teams and I have used to drive customer and business growth depending on the specific needs of a product and team. This includes the following areas I specialize in:" />
       <List>
         {HowIWorkList.map((item) => (
           <ListItem key={item.primary}>
             <ListItemText
               primary={item.primary}
               secondary={item.secondary}
-              primaryTypographyProps={{ variant: "h6", color: "primary" }}
+              primaryTypographyProps={{
+                variant: "h6",
+                color: theme.palette.primary.medium,
+              }}
             />
           </ListItem>
         ))}
