@@ -17,13 +17,15 @@ const styles = {
   avatarGrid: {
     display: "flex",
     justifyContent: "center",
+    order: { xs: 1, sm: 2 },
+    marginBottom: { xs: "20px", sm: 0 },
   },
 };
 const Name = () => {
   return (
     <Box sx={styles.container}>
       <Grid container sx={styles.gridContainer}>
-        <Grid item xs={8}>
+        <Grid item xs={12} sm={8} sx={{ order: { xs: 2, sm: 1 } }}>
           <Typography variant="body1">
             I am a product manager, full-stack developer, and data scientist. As
             a tech-savy PM, I build products from scratch, love coding with the
@@ -34,7 +36,7 @@ const Name = () => {
             marketplaces.
           </Typography>
         </Grid>
-        <Grid item xs={4} sx={styles.avatarGrid}>
+        <Grid item xs={12} sm={4} sx={styles.avatarGrid}>
           <Avatar alt="Remy Sharp" src={profile} sx={avatarStyle} />
         </Grid>
       </Grid>
