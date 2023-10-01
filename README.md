@@ -1,7 +1,7 @@
 ## Personal Website
 
 This is a personal website showcasing my background, skills and porfolio. For more details about my
-work experience and education, click on **'download my cv'** under the About Me section to get a pdf copy of my resume.
+work experience and education, click on **'download my cv'** the Resume section to get a pdf copy of my resume.
 
 _This Website is regularly updated to showcase the latest projects i did_
 
@@ -9,4 +9,4 @@ _This Website is regularly updated to showcase the latest projects i did_
 
 The plan is to update the website with better functionalities.
 
-Latest update>22-08-2023
+Latest update>02-10-2023
