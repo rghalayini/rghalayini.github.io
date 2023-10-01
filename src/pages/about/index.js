@@ -1,13 +1,13 @@
 import React from "react";
-import AboutMe from "../pageComponents/AboutMe";
-import Layout from "../pageComponents/Layout";
+import AboutMe from "../../pageComponents/AboutMe";
+import Layout from "../../pageComponents/Layout";
 import { Box } from "@mui/material";
-import BlockHeader from "../components/BlockHeader";
-import TextBlock from "../components/TextBlock";
-import BlockSubHeader from "../components/BlockSubHeader";
-import theme from "../theme";
-import CallForAction from "../components/CallForAction";
-import arctic15 from "../images/arctic15.png";
+import BlockHeader from "../../components/BlockHeader";
+import TextBlock from "../../components/TextBlock";
+import BlockSubHeader from "../../components/BlockSubHeader";
+import theme from "../../theme";
+import CallForAction from "../../components/CallForAction";
+import arctic15 from "../../images/arctic15.png";
 
 const greenBackground = {
   backgroundColor: theme.palette.primary.main,
