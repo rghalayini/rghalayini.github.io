@@ -1,29 +1,31 @@
 import React from "react";
-import { Container, Box, Typography } from "@mui/material";
+import { Typography, Avatar, Grid } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import theme from "../theme";
+import BlockHeader from "../components/BlockHeader";
+import profile from "../images/RG_profile.png";
+import { avatarStyle } from "../library/Constants";
+
 const styles = {
   container: {
-    display: "flex",
-    justifyContent: "center",
-  },
-  contentBox: {
-    width: "400px",
-    textAlign: "center",
-  },
-  title: {
-    marginBottom: "30px",
+    flexDirection: "column",
+    alignItems: "center",
+    marginTop: "5%",
   },
   icon: {
     fontSize: "50px",
-    color: theme.palette.black.deepSpaceBlack,
+    color: theme.palette.primary.main,
   },
   aTag: {
     textDecoration: "none",
   },
+  bodyText: {
+    color: theme.palette.grey.white,
+    paddingTop: "30px",
+  },
 };
-const index = () => {
+const LetsConnect = () => {
   const emailAddress = "remyghalayini@gmail.com";
 
   const handleEmailClick = () => {
@@ -31,11 +33,14 @@ const index = () => {
   };
 
   return (
-    <Container sx={styles.container}>
-      <Box sx={styles.contentBox}>
-        <Typography variant="h3" sx={styles.title}>
-          Let&apos;s connect
-        </Typography>
+    <Grid container sx={styles.container}>
+      <Grid item xs={12} sm={3}>
+        <Avatar alt="Remy Sharp" src={profile} sx={avatarStyle} />
+      </Grid>
+      <Grid item xs={12} sm={3} mt={3}>
+        <BlockHeader text="Let's connect" green variant="h3" />
+      </Grid>
+      <Grid item xs={12} sm={3}>
         <a
           href="https://www.linkedin.com/in/rghalayini/"
           target="_blank"
@@ -51,16 +56,17 @@ const index = () => {
         >
           <EmailIcon sx={styles.icon} />
         </a>
-
-        <Typography>
+      </Grid>
+      <Grid item xs={12} sm={3}>
+        <Typography variant="body1" sx={styles.bodyText}>
           Please don&apos;t hesitate to reach out if you would like to chat
           about work or side project opportunities, share your feedback and
           input, or just connect. I am always open to new conversations and will
           do my best to respond to you in a timely manner. Cheers!
         </Typography>
-      </Box>
-    </Container>
+      </Grid>
+    </Grid>
   );
 };
 
-export default index;
+export default LetsConnect;

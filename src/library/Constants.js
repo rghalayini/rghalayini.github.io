@@ -7,6 +7,10 @@ export const imageStyle = {
   width: "100%",
 };
 
+export const avatarStyle = {
+  width: 200,
+  height: 200,
+};
 export const HowIWorkList = [
   {
     primary: "Set up a product team",

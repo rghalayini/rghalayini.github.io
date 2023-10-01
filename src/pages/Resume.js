@@ -1,9 +1,9 @@
 import React from "react";
-import LetsConnect from "../pageComponents/LetsConnect";
+import MyResume from "../pageComponents/MyResume";
 import Layout from "../pageComponents/Layout";
 import theme from "../theme";
 
-const Contact = () => {
+const Resume = () => {
   return (
     <Layout
       backgroundColor={theme.palette.grey.dark}
@@ -12,9 +12,9 @@ const Contact = () => {
       disableGutters
       noMarginBottom
     >
-      <LetsConnect />
+      <MyResume />
     </Layout>
   );
 };
 
-export default Contact;
+export default Resume;
