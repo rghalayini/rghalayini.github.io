@@ -2,7 +2,7 @@ import React from "react";
 import AboutMe from "../pageComponents/AboutMe";
 import Layout from "../pageComponents/Layout";
 
-const Contact = () => {
+const About = () => {
   return (
     <Layout>
       <AboutMe />
@@ -10,4 +10,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default About;
