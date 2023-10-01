@@ -5,31 +5,44 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import AdbIcon from "@mui/icons-material/Adb";
+import CodeIcon from "@mui/icons-material/Code";
 import theme from "../theme";
 
 const styles = {
+  toolbar: {
+    justifyContent: "space-between",
+  },
+  titleBox: {
+    display: { xs: "none", md: "flex" },
+    marginRight: "60px",
+    alignItems: "center",
+  },
+  icon: {
+    color: theme.palette.grey.dark,
+    mr: 3,
+  },
   title: {
     mr: 2,
-    display: { xs: "none", md: "flex" },
-    fontFamily: "monospace",
     fontWeight: 700,
-    //letterSpacing: ".3rem",
-    color: theme.palette.black.deepSpaceBlack,
+    color: theme.palette.grey.dark,
     textDecoration: "none",
-    marginRight: "60px",
+    fontFamily: "Bebas Neue, sans-serif",
+    letterSpacing: "0.3em",
+  },
+  menuBox: {
+    display: { xs: "none", md: "flex" },
   },
   menuItem: {
     my: 2,
-    color: theme.palette.black.deepSpaceBlack,
+    color: theme.palette.grey.dark,
     display: "block",
   },
 };
 
 const pages = [
   {
-    pageName: "Projects",
-    url: "",
+    pageName: "Work",
+    url: "/",
   },
   {
     pageName: "About me",
@@ -41,7 +54,7 @@ const pages = [
   },
   {
     pageName: "Resume",
-    url: "",
+    url: "/my-resume",
   },
 ];
 const handleClick = (url) => {
@@ -50,20 +63,21 @@ const handleClick = (url) => {
 const ResponsiveAppBar = () => {
   return (
     <AppBar position="fixed" color="grey">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={styles.title}
-          >
-            Rémy Ghalayini
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+      <Container maxWidth="lg">
+        <Toolbar disableGutters sx={styles.toolbar}>
+          <Box sx={styles.titleBox}>
+            <CodeIcon sx={styles.icon} />
+            <Typography
+              variant="h5"
+              noWrap
+              component="a"
+              href="/"
+              sx={styles.title}
+            >
+              Rémy Ghalayini
+            </Typography>
+          </Box>
+          <Box sx={styles.menuBox}>
             {pages.map((page) => (
               <Button
                 key={page}

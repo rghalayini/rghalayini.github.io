@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
 import GlobheApp from "./pages/GlobheApp";
+import Resume from "./pages/Resume";
 
 const App = () => {
   return (
@@ -13,9 +14,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/globhe-app" element={<GlobheApp />} />
-
-        {/* <Route path='/blogs' element={<Blogs />} />
-                <Route path='/sign-up' element={<SignUp />} /> */}
+        <Route path="/my-resume" element={<Resume />} />
       </Routes>
     </Router>
   );

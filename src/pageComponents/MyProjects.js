@@ -12,12 +12,12 @@ const MyProjects = () => {
         <Grid item xs={12} sm={4}>
           <SingleProject url="/globhe-app" />
         </Grid>
-        <Grid item xs={12} sm={4}>
+        {/* <Grid item xs={12} sm={4}>
           <SingleProject url="/globhe-app" />
         </Grid>
         <Grid item xs={12} sm={4}>
           <SingleProject url="/globhe-app" />
-        </Grid>
+        </Grid> */}
       </Grid>
     </>
   );

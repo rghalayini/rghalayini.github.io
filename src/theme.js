@@ -23,12 +23,16 @@ const theme = createTheme({
     },
     h4: {
       fontWeight: 700,
+      fontFamily: "Bebas Neue, sans-serif",
+      letterSpacing: "0.1em",
     },
     h5: {
       fontWeight: 700,
+      textTransform: "uppercase",
     },
     h6: {
       fontWeight: 500,
+      fontSize: "1.1rem",
     },
   },
   palette: {
@@ -42,7 +46,7 @@ const theme = createTheme({
     grey: {
       dark: "#484649",
       medium: "#DCDCDF",
-      white: "#f8fcff",
+      white: "#fff",
     },
   },
 });

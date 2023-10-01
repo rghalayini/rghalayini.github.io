@@ -15,9 +15,7 @@ const LandingPage = () => {
   return (
     <>
       <Layout>
-        {/* <Box sx={styles.box}> */}
         <Name />
-        {/* </Box> */}
         <Box sx={styles.box}>
           <MyProjects />
         </Box>

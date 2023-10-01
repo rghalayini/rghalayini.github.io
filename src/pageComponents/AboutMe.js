@@ -14,7 +14,7 @@ const greenBackground = {
 
 const AboutMe = () => {
   return (
-    <Box>
+    <Box sx={{ marginTop: "60px" }}>
       <BlockHeader text="About me" />
       <TextBlock
         text="As a seasoned product leader, I have a unique perspective on building
