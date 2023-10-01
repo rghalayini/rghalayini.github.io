@@ -3,6 +3,7 @@ import { Typography, Grid } from "@mui/material";
 import theme from "../theme";
 import BlockHeader from "../components/BlockHeader";
 import GeneralButton from "../components/CallForAction";
+import pdf from "../images/Ghalayini_CV.pdf";
 
 const styles = {
   container: {
@@ -23,6 +24,7 @@ const styles = {
   },
 };
 const MyResume = () => {
+  const pdfUrl = "../images/Ghalayini_CV.pdf";
   return (
     <Grid container sx={styles.container}>
       <Grid item xs={12} sm={4} mt={3}>
@@ -35,7 +37,12 @@ const MyResume = () => {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={4}>
-        <GeneralButton label="Download my resume" />
+        <GeneralButton
+          label="Download my resume"
+          onClick={() => window.open(pdfUrl, "_blank")}
+          download
+          url={pdf}
+        />
       </Grid>
     </Grid>
   );
