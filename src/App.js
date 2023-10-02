@@ -13,7 +13,7 @@ const App = () => {
         <Route exact path="/" element={<LandingPage />} />
         <Route path="/#/about" element={<About />} />
         <Route path="/#/contact" element={<Contact />} />
-        <Route path="/#/globhe-app" element={<GlobheApp />} />
+        <Route path="/globhe-app" element={<GlobheApp />} />
         <Route path="/#/my-resume" element={<Resume />} />
       </Routes>
     </HashRouter>
