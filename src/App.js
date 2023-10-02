@@ -11,7 +11,7 @@ import TagManager from "react-gtm-module";
 const App = () => {
   useEffect(() => {
     // Initialize Google Analytics with your Tracking ID
-    ReactGA.initialize("UA-180566476-1");
+    ReactGA.initialize("G-P1FLJZ7FZ9");
     ReactGA.pageview(window.location.pathname + window.location.search);
     TagManager.initialize({
       gtmId: "G-M3XXNGRW2H",
