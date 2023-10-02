@@ -46,15 +46,15 @@ const pages = [
   },
   {
     pageName: "About me",
-    url: "/about",
+    url: "/#/about",
   },
   {
     pageName: "Contact",
-    url: "/contact",
+    url: "/#/contact",
   },
   {
     pageName: "Resume",
-    url: "/my-resume",
+    url: "/#/my-resume",
   },
 ];
 const handleClick = (url) => {
