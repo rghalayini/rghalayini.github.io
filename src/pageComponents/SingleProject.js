@@ -6,10 +6,9 @@ import Proptypes from "prop-types";
 import theme from "../theme";
 const styles = {
   svgBox: {
-    backgroundColor: theme.palette.black.deepSpaceBlack,
+    backgroundColor: theme.palette.primary.main,
     width: "100%",
     height: "100%",
-    // padding: "10px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
