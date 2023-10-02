@@ -22,7 +22,7 @@ const LandingPage = () => {
         <Box sx={styles.box}>
           <HowIWork />
         </Box>
-        <CallForAction label="Read more about me" url="/about" />
+        <CallForAction label="Read more about me" url="/#/about" />
       </Layout>
     </>
   );

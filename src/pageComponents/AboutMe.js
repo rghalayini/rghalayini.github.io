@@ -72,7 +72,7 @@ const AboutMe = () => {
         customers' expectations."
         />
       </Box>
-      <CallForAction label="Contact me" url="/contact" />
+      <CallForAction label="Contact me" url="/#/contact" />
     </Box>
   );
 };

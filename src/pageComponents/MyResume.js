@@ -2,7 +2,7 @@ import React from "react";
 import { Typography, Grid } from "@mui/material";
 import theme from "../theme";
 import BlockHeader from "../components/BlockHeader";
-import GeneralButton from "../components/CallForAction";
+import GeneralButton from "../components/GeneralButton";
 import pdf from "../images/Ghalayini_CV.pdf";
 
 const styles = {
