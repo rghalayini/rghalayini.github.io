@@ -36,7 +36,7 @@ const MyResume = () => {
           Click on the button below to view my resume as a PDF.
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={4}>
+      <Grid item xs={12} sm={4} mt={3}>
         <GeneralButton
           label="Download my resume"
           onClick={() => window.open(pdfUrl, "_blank")}

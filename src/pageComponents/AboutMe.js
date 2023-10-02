@@ -47,7 +47,7 @@ const AboutMe = () => {
           text="I turned into full stack development because I love to build things. I
         have worked on projects in node.js, javascript, C#, .net, and react. I
         have used Google clouds firebase, AWS, Azure, MongoDB, and SQL for
-        databases. I work on a new feature every week and review the engineers
+        databases. I work on a new feature every week and review the engineers'
         code so that I keep my skills sharp. To understand the big picture of
         the project and where it is heading, we must look at the small details
         of the code to understand its potential and limitations. That's why
@@ -56,19 +56,20 @@ const AboutMe = () => {
         />
         <BlockSubHeader text="Product management" />
         <TextBlock
-          text="As a seasoned product leader, I have a unique perspective on building
-        products that are both technically sound and user-friendly. I am
-        passionate about understanding user behavior and creating an optimized
-        experience that eases pain points and brings joy. I use both data and
-        frequent user communication to understand what the user really wants. By
-        thinking through the entire customer journey, I am able to challenge
+          text="I love to build things and think about the UX, the UI, the code architecture, 
+        the business goals, and set processes. That's why I transitioned to a PM.
+        I have a unique ability to quickly understand the product and visualise where we 
+        will be in the future. I think the potential is enormous with every product if we understand the client and the market.
+        That's why I use both data and frequent user communication to understand what the user really wants. By
+        thinking through the entire customer journey and thinking through the market and the company strategy, I am able to challenge
         assumptions and identify opportunities to improve the product
         experience. My programming and data science background has given me a
         strong foundation in problem-solving, problem definition, and attention
         to detail, which has been valuable in working collaboratively with
         cross-functional team members and communication with stakeholder and
-        investors. As a product leader, I am committed to using data and
-        analytics to drive innovation and deliver products that exceed our
+        investors. My PhD and previous work has empowered me with presentation
+        and story telling skills which I use on daily basis with my team, the management, and the stakeholders. As a product leader, I am committed to using data,
+        analytics, and best UX practices to drive innovation and deliver products that exceed our
         customers' expectations."
         />
       </Box>
