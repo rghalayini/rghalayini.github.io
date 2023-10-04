@@ -5,8 +5,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import GlobheApp from "./pages/GlobheApp";
 import Resume from "./pages/Resume";
-// import ReactGA from "react-ga";
-// import TagManager from "react-gtm-module";
+
 const PageTracker = () => {
   const params = useParams();
 
@@ -21,15 +20,6 @@ const PageTracker = () => {
 };
 
 const App = () => {
-  // useEffect(() => {
-  //   // Initialize Google Analytics with your Tracking ID
-  //   ReactGA.initialize("G-P1FLJZ7FZ9");
-  //   ReactGA.pageview(window.location.pathname + window.location.search);
-  //   TagManager.initialize({
-  //     gtmId: "G-M3XXNGRW2H",
-  //   });
-  // }, []);
-
   return (
     <HashRouter>
       <Routes>
