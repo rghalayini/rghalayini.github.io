@@ -5,18 +5,18 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import GlobheApp from "./pages/GlobheApp";
 import Resume from "./pages/Resume";
-import ReactGA from "react-ga";
-import TagManager from "react-gtm-module";
+// import ReactGA from "react-ga";
+// import TagManager from "react-gtm-module";
 
 const App = () => {
-  useEffect(() => {
-    // Initialize Google Analytics with your Tracking ID
-    ReactGA.initialize("G-P1FLJZ7FZ9");
-    ReactGA.pageview(window.location.pathname + window.location.search);
-    TagManager.initialize({
-      gtmId: "G-M3XXNGRW2H",
-    });
-  }, []);
+  // useEffect(() => {
+  //   // Initialize Google Analytics with your Tracking ID
+  //   ReactGA.initialize("G-P1FLJZ7FZ9");
+  //   ReactGA.pageview(window.location.pathname + window.location.search);
+  //   TagManager.initialize({
+  //     gtmId: "G-M3XXNGRW2H",
+  //   });
+  // }, []);
 
   return (
     <HashRouter>
