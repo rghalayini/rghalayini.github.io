@@ -7,6 +7,7 @@ import GlobheApp from "./pages/GlobheApp";
 import Resume from "./pages/Resume";
 // import ReactGA from "react-ga";
 // import TagManager from "react-gtm-module";
+import RouteMiddleware from "./RouteMiddleware";
 
 const App = () => {
   // useEffect(() => {
@@ -21,11 +22,33 @@ const App = () => {
   return (
     <HashRouter>
       <Routes>
-        <Route exact path="/" element={<LandingPage />} />
+        <RouteMiddleware
+          path="/"
+          title="Projects"
+          element={<LandingPage />}
+          exact
+        />
+        <RouteMiddleware path="/about" element={<About />} title="About me" />{" "}
+        <RouteMiddleware
+          path="/contact"
+          title="Contact me"
+          element={<Contact />}
+        />{" "}
+        <RouteMiddleware
+          path="/globhe-app"
+          title="GLOBHE app"
+          element={<GlobheApp />}
+        />{" "}
+        <RouteMiddleware
+          path="/my-resume"
+          title="My resume"
+          element={<Resume />}
+        />
+        {/* <Route exact path="/" element={<LandingPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/globhe-app" element={<GlobheApp />} />
-        <Route path="/my-resume" element={<Resume />} />
+        <Route path="/my-resume" element={<Resume />} /> */}
       </Routes>
     </HashRouter>
   );
