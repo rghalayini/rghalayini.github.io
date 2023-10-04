@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Layout from "../pageComponents/Layout";
 import BlockHeader from "../components/BlockHeader";
 import TextBlock from "../components/TextBlock";
@@ -10,6 +10,9 @@ import ListComponent from "../components/ListComponent";
 import ProjectPage from "../images/projectPage.png";
 
 const GlobheApp = () => {
+  useEffect(() => {
+    document.title = "GLOBHE app";
+  }, []);
   return (
     <Layout>
       <Box sx={{ marginTop: "60px" }}>

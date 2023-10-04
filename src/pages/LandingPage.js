@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Name from "../pageComponents/Name";
 import MyProjects from "../pageComponents/MyProjects";
 import { Box } from "@mui/material";
@@ -12,6 +12,9 @@ const styles = {
   },
 };
 const LandingPage = () => {
+  useEffect(() => {
+    document.title = "Rémy Ghalayini";
+  }, []);
   return (
     <>
       <Layout>
