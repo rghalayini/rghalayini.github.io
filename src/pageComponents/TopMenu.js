@@ -1,25 +1,31 @@
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import CodeIcon from "@mui/icons-material/Code";
+import React, { useState } from "react";
+import {
+  Typography,
+  IconButton,
+  Toolbar,
+  Box,
+  AppBar,
+  Container,
+  Button,
+  MenuItem,
+  Menu,
+} from "@mui/material";
 import theme from "../theme";
+import MenuIcon from "@mui/icons-material/Menu";
+import CodeIcon from "@mui/icons-material/Code";
 
 const styles = {
   toolbar: {
     justifyContent: "space-between",
   },
   titleBox: {
-    display: { xs: "none", md: "flex" },
-    marginRight: "60px",
+    display: "flex",
+    marginRight: { xs: 0, md: "60px" },
     alignItems: "center",
   },
   icon: {
     color: theme.palette.grey.dark,
-    mr: 3,
+    mr: { xs: 1, md: 3 },
   },
   title: {
     mr: 2,
@@ -36,6 +42,11 @@ const styles = {
     my: 2,
     color: theme.palette.grey.dark,
     display: "block",
+  },
+  menuIcon: {
+    flexGrow: 1,
+    display: { xs: "flex", md: "none" },
+    justifyContent: "flex-end",
   },
 };
 
@@ -61,6 +72,15 @@ const handleClick = (url) => {
   window.location.href = url;
 };
 const ResponsiveAppBar = () => {
+  const [anchorElNav, setAnchorElNav] = useState(null);
+
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
   return (
     <AppBar position="fixed" color="grey">
       <Container maxWidth="lg">
@@ -68,7 +88,7 @@ const ResponsiveAppBar = () => {
           <Box sx={styles.titleBox}>
             <CodeIcon sx={styles.icon} />
             <Typography
-              variant="h5"
+              variant="h6"
               noWrap
               component="a"
               href="/"
@@ -87,6 +107,47 @@ const ResponsiveAppBar = () => {
                 {page.pageName}
               </Button>
             ))}
+          </Box>
+          <Box sx={styles.menuIcon}>
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "left",
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: "block", md: "none" },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                  <Typography
+                    textAlign="center"
+                    onClick={() => handleClick(page.url)}
+                  >
+                    {page.pageName}
+                  </Typography>
+                </MenuItem>
+              ))}
+            </Menu>
           </Box>
         </Toolbar>
       </Container>
