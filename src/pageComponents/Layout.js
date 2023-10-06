@@ -5,9 +5,10 @@ import TopMenu from "./TopMenu";
 import theme from "../theme";
 const styles = {
   container: {
-    //marginTop: { xs: "48px", sm: "64px" },
-    paddingTop: { xs: "48px", sm: "64px" }, // Adjust padding-top for different screen sizes
+    paddingTop: { xs: "48px", sm: "60px" }, // Adjust padding-top for different screen sizes
     minHeight: "100vh", // Ensure the container is at least 100vh
+    paddingRight: { xs: "20px", md: 0 },
+    paddingLeft: { xs: "20px", md: 0 },
   },
   fullPage: {
     //width: "100vw",
@@ -30,7 +31,7 @@ const Layout = ({
 
   return (
     <>
-      <Container maxWidth={maxWidth} sx={layoutStyles}>
+      <Container maxWidth={maxWidth} sx={layoutStyles} disableGutters>
         <TopMenu />
 
         {children}
