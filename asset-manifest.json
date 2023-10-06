@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.5b7aa7b6.js",
+    "main.js": "/static/js/main.1e470805.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/RG_profile.png": "/static/media/RG_profile.624f6c0b2afd95911770.png",
     "static/media/globhe_client.png": "/static/media/globhe_client.946deb6a1e3c33ad314c.png",
@@ -9,10 +9,10 @@
     "static/media/arctic15.png": "/static/media/arctic15.a63ca7e626215b0fff90.png",
     "static/media/_Globhe_logotype_2022_white.svg": "/static/media/63a4404bcc9a62ad79fc3751_Globhe_logotype_2022_white.48d87c27fb404404caddb8a667e13e48.svg",
     "index.html": "/index.html",
-    "main.5b7aa7b6.js.map": "/static/js/main.5b7aa7b6.js.map",
+    "main.1e470805.js.map": "/static/js/main.1e470805.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5b7aa7b6.js"
+    "static/js/main.1e470805.js"
   ]
 }
