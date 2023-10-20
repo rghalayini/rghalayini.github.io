@@ -21,7 +21,7 @@ const MyProjects = () => {
         </Grid>
         <Grid item xs={12} sm={4} sx={removeUnderline}>
           <SingleProject
-            url="/globhe-app"
+            url="/developers-docs"
             color={theme.palette.grey.dark}
             text="Developers docs"
           />
