@@ -87,3 +87,17 @@ export const Metrics = [
     primary: "Increased drone operators number (supply) x4",
   },
 ];
+
+export const DevelopersMetrics = [
+  {
+    primary:
+      "Saving 3 hours for each client's onboarding. Before the page, we needed to schedule a meeting with the client to go through the integrations. Now all is automated.",
+  },
+  {
+    primary: "Doubled the number of clients wanting to use the API.",
+  },
+  {
+    primary:
+      "Increased customer satisfaction due to easier instructions and guidelines.",
+  },
+];
