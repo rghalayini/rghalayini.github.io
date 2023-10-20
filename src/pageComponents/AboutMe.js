@@ -34,13 +34,18 @@ const AboutMe = () => {
       <Box sx={greenBackground}>
         <BlockSubHeader text="Background" />
         <TextBlock
-          text="I have a PhD in geophysics from the Sorbonnes University in Paris.
+          text="I have a PhD in geophysics and 3D modelling from the Sorbonnes University in Paris.
         During and after my studies, I have worked tremendously with geospatial
         data as a data scientist. As such, I have worked a lot with programming
         in Python, creating machine learning models, and visualising data for
         presentations to stake holders. I got jobs mostly with large
         international corporations and worked in multiple countries with
         colleagues from all around the globe."
+          text2="I have worked since 2012 with drones and satellite images. Our 
+        team was the first in the world to use drones for 3D modelling. We built 
+        the drone itself and created the modelling software all from scratch 
+        because DJI and the classical processing software of today were not yet present. 
+        As such, I have a great knowledge about geospatial data, 3D modelling, drones, satellites, and regulations."
         />
         <BlockSubHeader text="Programming skills" />
         <TextBlock
@@ -53,6 +58,12 @@ const AboutMe = () => {
         of the code to understand its potential and limitations. That's why
         I truly believe that a technical background for a PM is essential in my
         opinion."
+        />
+        <BlockSubHeader text="UX skills" />
+        <TextBlock
+          text="I am not a UX/UI designer, but I have worked very closely with UX designers almost all my career. As such,
+          I have an eye for design and usability and unserstand all the UX concepts. I usually assist my designers to create UX flows to help
+          them with conceptualising the best user experience before applying the UI."
         />
         <BlockSubHeader text="Product management" />
         <TextBlock
