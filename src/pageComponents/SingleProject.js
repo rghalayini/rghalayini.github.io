@@ -1,14 +1,13 @@
 import React from "react";
-import { Box } from "@mui/system";
-import Globhe from "../images/63a4404bcc9a62ad79fc3751_Globhe_logotype_2022_white.svg";
 import { Link } from "react-router-dom";
 import Proptypes from "prop-types";
 import theme from "../theme";
+import { Box, Typography } from "@mui/material";
+
 const styles = {
   svgBox: {
-    backgroundColor: theme.palette.primary.main,
-    width: "100%",
-    height: "100%",
+    width: { xs: "100%", sm: "400px" },
+    height: "300px",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -20,22 +19,36 @@ const styles = {
     display: "flex",
     alignItems: "center",
   },
+  text: {
+    color: theme.palette.grey.white,
+  },
 };
 
-const SingleProject = ({ url }) => {
+const SingleProject = ({ url, color, image, text }) => {
   //  url can be of type: "/your-destination-url"
+  const backgroundColor = {
+    backgroundColor: color,
+  };
 
   return (
     <Link to={url}>
-      <Box sx={styles.svgBox}>
-        <Box component="svg" viewBox="0 0 100 100" sx={styles.svg}>
-          <image
-            href={Globhe}
-            width="100%"
-            height="100%"
-            style={styles.image}
-          />
-        </Box>
+      <Box sx={{ ...styles.svgBox, ...backgroundColor }}>
+        {image && (
+          <Box component="svg" viewBox="0 0 100 100" sx={styles.svg}>
+            <image
+              href={image}
+              width="100%"
+              height="100%"
+              style={styles.image}
+            />
+          </Box>
+        )}
+
+        {text && (
+          <Typography sx={styles.text} variant="h4">
+            {text}
+          </Typography>
+        )}
       </Box>
     </Link>
   );
@@ -43,6 +56,14 @@ const SingleProject = ({ url }) => {
 
 SingleProject.propTypes = {
   url: Proptypes.string.isRequired,
+  color: Proptypes.string,
+  image: Proptypes.string,
+  text: Proptypes.string,
+};
+SingleProject.defaultProps = {
+  color: theme.palette.primary.main,
+  text: undefined,
+  image: undefined,
 };
 
 export default SingleProject;
