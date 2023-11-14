@@ -101,3 +101,18 @@ export const DevelopersMetrics = [
       "Increased customer satisfaction due to easier instructions and guidelines.",
   },
 ];
+
+export const ShoppingMetrics = [
+  {
+    primary:
+      "Avoid using papers to write lists and carrying them to the grocery store. Everything is now on the phone and available to everybody in the house. Better for the environment.",
+  },
+  {
+    primary:
+      "Reduced shopping time by about 30min because it is now faster and easier to retrieve the list, read the items, and delete purchased items.",
+  },
+  {
+    primary:
+      "Reduced misunderstanding and miscommunication because all the items are now stored in one place easily accessible by everybody in real time.",
+  },
+];

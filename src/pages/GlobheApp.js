@@ -8,6 +8,7 @@ import { imageStyle, GlobhePMF, Metrics } from "../library/Constants";
 import BlockSubHeader from "../components/BlockSubHeader";
 import ListComponent from "../components/ListComponent";
 import ProjectPage from "../images/projectPage.png";
+import GeneralButton from "../components/GeneralButton";
 
 const GlobheApp = () => {
   useEffect(() => {
@@ -47,6 +48,12 @@ const GlobheApp = () => {
           text2="The most immportant lesson I learnt in this work is to be the voice of the user, work on superior UX-UI from day 1, and know what it means to be in a venture-backed startup, how it impacts decisions, and how to manage budgeting & burn rate while running lean."
         />
         <TextBlock text="Remember that marketplaces are tricky but once you have a good product market fit, you understand both supply and demand, and you have a strong sales team especially in the beginning of the journey, then marketplaces will be a great product that will run smoothly and scale quickly." />
+        <BlockSubHeader text="Check it out" moreMargin />
+        <GeneralButton
+          label="Go to GLOBHE"
+          externalLink
+          url="https://app.globhe.com/"
+        />
       </Box>
     </Layout>
   );

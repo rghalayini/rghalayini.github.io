@@ -4,9 +4,10 @@ import BlockHeader from "../components/BlockHeader";
 import TextBlock from "../components/TextBlock";
 import { Box } from "@mui/material";
 import apiImage from "../images/apiDocs.png";
-import { imageStyle, GlobhePMF, DevelopersMetrics } from "../library/Constants";
+import { imageStyle, DevelopersMetrics } from "../library/Constants";
 import BlockSubHeader from "../components/BlockSubHeader";
 import ListComponent from "../components/ListComponent";
+import GeneralButton from "../components/GeneralButton";
 
 const DevelopersPage = () => {
   useEffect(() => {
@@ -32,6 +33,12 @@ const DevelopersPage = () => {
         <TextBlock
           text="A common misconcepion is that CTOs and product managers should not code. I do not agree with this and that's why I always try to be involved in coding and code review to keep my skills sharp and make sure that we solve tech debt early. By being more involved in engineering, I can feel what obstacles the team is facing and try to solve it for them before it becomes difficult and costly to solve later."
           text2="Another important aspect to remember is that when we need something quickly, I just jump in and do it. I could of course put this in the pipeline for later, but by doing that I risk losing clients. That's a characteristic of me: when I am needed or when a feature is urgently required, I jump in and do things."
+        />
+        <BlockSubHeader text="Check it out" moreMargin />
+        <GeneralButton
+          label="Go to the developers page"
+          externalLink
+          url="https://developers.globhe.com/"
         />
       </Box>
     </Layout>
