@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.ecf186ee.js",
+    "main.js": "/static/js/main.c2643ec6.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/RG_profile.png": "/static/media/RG_profile.624f6c0b2afd95911770.png",
     "static/media/globhe_client.png": "/static/media/globhe_client.946deb6a1e3c33ad314c.png",
@@ -8,12 +8,13 @@
     "static/media/projectPage.png": "/static/media/projectPage.e3890f63d32431677811.png",
     "static/media/arctic15.png": "/static/media/arctic15.a63ca7e626215b0fff90.png",
     "static/media/apiDocs.png": "/static/media/apiDocs.9a38fa07928eacd0984a.png",
+    "static/media/shopping.png": "/static/media/shopping.39a1a5e84947d094fd93.png",
     "static/media/_Globhe_logotype_2022_white.svg": "/static/media/63a4404bcc9a62ad79fc3751_Globhe_logotype_2022_white.48d87c27fb404404caddb8a667e13e48.svg",
     "index.html": "/index.html",
-    "main.ecf186ee.js.map": "/static/js/main.ecf186ee.js.map",
+    "main.c2643ec6.js.map": "/static/js/main.c2643ec6.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.ecf186ee.js"
+    "static/js/main.c2643ec6.js"
   ]
 }
