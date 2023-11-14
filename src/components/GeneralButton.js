@@ -2,7 +2,14 @@ import React from "react";
 import { Button } from "@mui/material";
 import PropTypes from "prop-types";
 import DownloadIcon from "@mui/icons-material/Download";
-const GeneralButton = ({ label, url, downloadFunction, onClick, download }) => {
+const GeneralButton = ({
+  label,
+  url,
+  downloadFunction,
+  onClick,
+  download,
+  externalLink,
+}) => {
   return (
     <>
       {download ? (
@@ -23,7 +30,7 @@ const GeneralButton = ({ label, url, downloadFunction, onClick, download }) => {
           download={downloadFunction}
           onClick={onClick}
           href={url}
-          target="_self"
+          target={externalLink ? "_blank" : "_self"}
         >
           {label}
         </Button>
@@ -38,12 +45,14 @@ GeneralButton.propTypes = {
   onClick: PropTypes.func,
   url: PropTypes.string,
   download: PropTypes.bool,
+  externalLink: PropTypes.bool,
 };
 GeneralButton.defaultProps = {
   downloadFunction: false,
   onClick: undefined,
   url: undefined,
   download: false,
+  externalLink: false,
 };
 
 export default GeneralButton;

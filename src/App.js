@@ -6,6 +6,7 @@ import About from "./pages/About";
 import GlobheApp from "./pages/GlobheApp";
 import Resume from "./pages/Resume";
 import DevelopersPage from "./pages/DevelopersPage";
+import ShoppingList from "./pages/ShoppingList";
 
 const PageTracker = () => {
   const params = useParams();
@@ -40,6 +41,11 @@ const App = () => {
           path="/developers-docs"
           title="Developers page"
           element={<DevelopersPage />}
+        />
+        <Route
+          path="/shopping-list"
+          title="Shopping list"
+          element={<ShoppingList />}
         />
       </Routes>
     </HashRouter>

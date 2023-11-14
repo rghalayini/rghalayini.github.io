@@ -26,9 +26,13 @@ const MyProjects = () => {
             text="Developers docs"
           />
         </Grid>
-        {/* <Grid item xs={12} sm={4}>
-          <SingleProject url="/globhe-app" />
-        </Grid> */}
+        <Grid item xs={12} sm={4} sx={removeUnderline}>
+          <SingleProject
+            url="/shopping-list"
+            //color={theme.palette.grey.dark}
+            text="Shopping list"
+          />
+        </Grid>
       </Grid>
     </>
   );
