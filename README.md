@@ -9,4 +9,4 @@ _This Website is regularly updated to showcase the latest projects i did_
 
 This website is created by using React.
 
-Latest update>17-06-2024
+Latest update>18-06-2024
